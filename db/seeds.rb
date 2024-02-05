@@ -8,6 +8,9 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
+user = Kawsang::User.create(email: "admin@kawsang.com", role: "primary_admin")
+user.confirm
+
 if Doorkeeper::Application.count.zero?
   Doorkeeper::Application.create(name: "Android client", redirect_uri: "", scopes: "")
   Doorkeeper::Application.create(name: "React", redirect_uri: "", scopes: "")

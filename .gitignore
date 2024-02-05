@@ -34,3 +34,5 @@
 app.env
 db/schema.rb
 db/migrate/*
+
+.DS_Store
