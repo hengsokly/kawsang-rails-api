@@ -36,3 +36,4 @@ db/schema.rb
 db/migrate/*
 
 .DS_Store
+.byebug_history

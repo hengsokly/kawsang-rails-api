@@ -7,7 +7,7 @@ Doorkeeper.configure do
 
 
   resource_owner_from_credentials do |_routes|
-    Kawsang::User.authenticate(params[:email], params[:password])
+    Kawsang::User.authenticate(params[:email], params[:api_key])
   end
 
   # This block will be called to check whether the resource owner is authenticated or not.

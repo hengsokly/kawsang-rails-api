@@ -8,7 +8,7 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-user = Kawsang::User.create(email: "admin@kawsang.com", role: "primary_admin")
+user = Kawsang::User.create(email: "admin@kawsang.com", role: "primary_admin", password: '123456')
 user.confirm
 
 if Doorkeeper::Application.count.zero?
